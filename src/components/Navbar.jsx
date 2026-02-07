@@ -15,9 +15,9 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo-container">
-        <span className="logo-text">Joh </span>
-        <span className="logo-text">an</span>
+        <span className="logo-text">Joha </span>
         <img src={logo} alt="H" className="navbar-logo" />
+        {/* <span className="logo-text"></span> */}
       </div>
 
         
