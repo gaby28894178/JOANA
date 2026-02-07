@@ -1,18 +1,35 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 15px 25px;
   align-items: center;
+  height: 70px;
+  padding: 0 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
 }
+
+.app.dark .navbar {
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+
+} 
+
 
 .nav-links {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .actions {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 .hamburger {
@@ -29,18 +46,70 @@
   }
 }
 
-
-
-.navbar {
-  height: 70px;              /* altura del navbar */
+.logo-container {
   display: flex;
-  align-items: center;       /* centra verticalmente */
-  padding: 0 20px;
+  align-items: center;
+  gap: 0;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f97316;
+  font-family: 'Pacifico', 'Lobster', cursive;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .navbar-logo {
-  height: 100%;              /* toma la altura del navbar */
-  max-height: 50px;          /* límite para que no se agrande */
-  width: auto;               /* mantiene proporción */
+  height: 40px;
+  width: 40px;
   object-fit: contain;
+  margin-left: -5px;
 }
+
+.app.dark .logo-text {
+  color: #22c55e;
+}
+
+.nav-links li { list-style: none; }
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.nav-search input {
+  border: none;
+  outline: none;
+}
+.nav-search button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover colors by theme */
+.app.light .navbar .actions button:hover,
+.app.light .navbar .nav-links a:hover {
+  color: #f97316;
+}
+
+.app.dark .navbar .actions button:hover,
+.app.dark .navbar .nav-links a:hover {
+  color: #22c55e;
+}
+
+/* icon color contrast by theme */
+.app.light .nav-links svg { color: #111; }
+.app.dark .nav-links svg { color: #fff; }

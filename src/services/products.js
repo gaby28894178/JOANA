@@ -1,6 +1,9 @@
 export async function fetchProducts() {
-  const res = await fetch('/datos/products.json')
-  if (!res.ok) throw new Error('Error al cargar productos')
+  let res = await fetch('/data/products.json')
+  if (!res.ok) {
+    res = await fetch('/datos/products.json')
+    if (!res.ok) throw new Error('Error al cargar productos')
+  }
   const data = await res.json()
   return data
 }
@@ -14,4 +17,3 @@ export async function fetchProductsByCategory(cat) {
   const items = await fetchProducts()
   return items.filter((p) => p.categoria === cat)
 }
-

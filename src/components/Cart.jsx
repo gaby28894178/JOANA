@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../context/cartCtx";
 import "./Cart.css";
 
 export default function Cart() {
@@ -16,6 +16,7 @@ export default function Cart() {
 
         {items.map(item => (
           <p key={item.id}>
+            {item.name} - ${item.price}
             {item.name} - ${item.price}
           </p>
         ))}
