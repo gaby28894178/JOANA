@@ -1,0 +1,42 @@
+[
+  {
+    "id": "a1",
+    "nombre": "Aromatizante Lavanda",
+    "descripcion": "Fragancia suave de lavanda para ambientes.",
+    "stock": 25,
+    "urlImagen": "/vite.svg",
+    "urlImagenesCarrusel": ["/vite.svg", "/vite.svg"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 5.99
+  },
+  {
+    "id": "a2",
+    "nombre": "Aromatizante Vainilla",
+    "descripcion": "Aroma dulce y cálido de vainilla.",
+    "stock": 18,
+    "urlImagen": "/vite.svg",
+    "urlImagenesCarrusel": ["/vite.svg", "/vite.svg"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 6.49
+  },
+  {
+    "id": "c1",
+    "nombre": "Galletas",
+    "descripcion": "Galletas crocantes sabor vainilla.",
+    "stock": 40,
+    "urlImagen": "/vite.svg",
+    "urlImagenesCarrusel": ["/vite.svg", "/vite.svg"],
+    "categoria": "comestibles",
+    "precioUnitario": 2.99
+  },
+  {
+    "id": "c2",
+    "nombre": "Chocolate",
+    "descripcion": "Barra de chocolate semiamargo.",
+    "stock": 30,
+    "urlImagen": "/vite.svg",
+    "urlImagenesCarrusel": ["/vite.svg", "/vite.svg"],
+    "categoria": "comestibles",
+    "precioUnitario": 3.99
+  }
+]

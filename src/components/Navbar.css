@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+.navbar {
+  height: 70px;              /* altura del navbar */
+  display: flex;
+  align-items: center;       /* centra verticalmente */
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  height: 100%;              /* toma la altura del navbar */
+  max-height: 50px;          /* límite para que no se agrande */
+  width: auto;               /* mantiene proporción */
+  object-fit: contain;
+}
