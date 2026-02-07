@@ -1,0 +1,171 @@
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu-content {
+  background: white;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease;
+}
+
+.app.dark .mobile-menu-content {
+  background: #1a1a1a;
+  color: white;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.app.dark .mobile-menu-header {
+  border-bottom: 1px solid #333;
+}
+
+.close-menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.app.dark .close-menu-btn {
+  color: #ccc;
+}
+
+.close-menu-btn:hover {
+  color: #f97316;
+}
+
+.app.dark .close-menu-btn:hover {
+  color: #22c55e;
+}
+
+/* Estilos para el input de búsqueda móvil */
+.mobile-search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #f8f8f8;
+}
+
+.app.dark .mobile-search {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+.mobile-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+.app.dark .mobile-search-input {
+  color: white;
+}
+
+.mobile-search-input::placeholder {
+  color: #999;
+}
+
+.app.dark .mobile-search-input::placeholder {
+  color: #888;
+}
+
+.mobile-search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.app.dark .mobile-search-btn {
+  color: #ccc;
+}
+
+.mobile-search-btn:hover {
+  color: #f97316;
+}
+
+.app.dark .mobile-search-btn:hover {
+  color: #22c55e;
+}
+
+/* Navegación móvil */
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile-nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.app.dark .mobile-nav-links a {
+  color: white;
+}
+
+.mobile-nav-links a:hover {
+  background: #f0f0f0;
+}
+
+.app.dark .mobile-nav-links a:hover {
+  background: #2a2a2a;
+}
+
+.mobile-nav-links a.active {
+  background: #f97316;
+  color: white;
+}
+
+.app.dark .mobile-nav-links a.active {
+  background: #22c55e;
+  color: white;
+}
+
+/* Animación */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Ocultar input de búsqueda del navbar en móvil */
+@media (max-width: 768px) {
+  .nav-search {
+    display: none;
+  }
+}

@@ -1,42 +1,122 @@
 [
   {
     "id": "a1",
-    "nombre": "Aromatizante Lavanda",
-    "descripcion": "Fragancia suave de lavanda para ambientes.",
+    "nombre": "Aromatizantes Lavanda",
+    "descripcion": "Fragancia suave de lavanda natural para ambientes. Perfecto para crear un ambiente relajante.",
     "stock": 25,
-    "urlImagen": "/vite.svg",
-    "urlImagenesCarrusel": ["/vite.svg", "/vite.svg"],
+    "urlImagen": "/data/img/aromatizantes/foto 1.jpg",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 1.jpg", "/data/img/aromatizantes/foto 2.jpg"],
     "categoria": "aromatizantes",
     "precioUnitario": 5.99
   },
   {
     "id": "a2",
-    "nombre": "Aromatizante Vainilla",
-    "descripcion": "Aroma dulce y cálido de vainilla.",
+    "nombre": "Aromatizantes Vainilla",
+    "descripcion": "Aroma dulce y cálido de vainilla natural. Ideal para hogares y oficinas.",
     "stock": 18,
-    "urlImagen": "/vite.svg",
-    "urlImagenesCarrusel": ["/vite.svg", "/vite.svg"],
+    "urlImagen": "/data/img/aromatizantes/foto 3.webp",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 3.webp", "/data/img/aromatizantes/foto 4.jpg"],
     "categoria": "aromatizantes",
     "precioUnitario": 6.49
   },
   {
+    "id": "a3",
+    "nombre": "Aromatizantes Cítricos",
+    "descripcion": "Fragancia fresca y energizante de cítricos. Perfecto para comenzar el día.",
+    "stock": 22,
+    "urlImagen": "/data/img/aromatizantes/foto 5.png",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 5.png", "/data/img/aromatizantes/foto 6.jpg"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 5.79
+  },
+  {
+    "id": "a4",
+    "nombre": "Aromatizantes Flores",
+    "descripcion": "Mezcla floral suave con notas de jazmín y rosa. Elegante y sofisticado.",
+    "stock": 15,
+    "urlImagen": "/data/img/aromatizantes/foto 7.webp",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 7.webp", "/data/img/aromatizantes/foto 8.webp"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 7.25
+  },
+  {
+    "id": "a5",
+    "nombre": "Aromatizantes Menta",
+    "descripcion": "Aroma refrescante de menta natural. Ideal para espacios de trabajo.",
+    "stock": 20,
+    "urlImagen": "/data/img/aromatizantes/foto 9.jpg",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 9.jpg", "/data/img/aromatizantes/foto 10.webp"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 6.99
+  },
+  {
+    "id": "a6",
+    "nombre": "Aromatizantes Canela",
+    "descripcion": "Aroma cálido y acogedor de canela. Perfecto para días fríos.",
+    "stock": 17,
+    "urlImagen": "/data/img/aromatizantes/foto 11.webp",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 11.webp", "/data/img/aromatizantes/foto 12.jpeg"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 6.75
+  },
+  {
     "id": "c1",
-    "nombre": "Galletas",
-    "descripcion": "Galletas crocantes sabor vainilla.",
+    "nombre": "Galletas de Vainilla",
+    "descripcion": "Galletas crocantes artesanales sabor vainilla. Perfectas para la merienda.",
     "stock": 40,
-    "urlImagen": "/vite.svg",
-    "urlImagenesCarrusel": ["/vite.svg", "/vite.svg"],
+    "urlImagen": "/data/img/comestibles/foto 17.webp",
+    "urlImagenesCarrusel": ["/data/img/comestibles/foto 17.webp", "/data/img/comestibles/foto 22.png"],
     "categoria": "comestibles",
     "precioUnitario": 2.99
   },
   {
     "id": "c2",
-    "nombre": "Chocolate",
-    "descripcion": "Barra de chocolate semiamargo.",
+    "nombre": "Chocolate Semiamargo",
+    "descripcion": "Barra de chocolate semiamargo 70% cacao. Delicioso y antioxidante.",
     "stock": 30,
-    "urlImagen": "/vite.svg",
-    "urlImagenesCarrusel": ["/vite.svg", "/vite.svg"],
+    "urlImagen": "/data/img/comestibles/foto 23.jpg",
+    "urlImagenesCarrusel": ["/data/img/comestibles/foto 23.jpg", "/data/img/comestibles/foto 24.jpg"],
     "categoria": "comestibles",
     "precioUnitario": 3.99
+  },
+  {
+    "id": "c3",
+    "nombre": "Mermelada de Frutilla",
+    "descripcion": "Mermelada artesanal de frutillas naturales. Sin conservantes artificiales.",
+    "stock": 20,
+    "urlImagen": "/data/img/comestibles/foto 29.jpg",
+    "urlImagenesCarrusel": ["/data/img/comestibles/foto 29.jpg", "/data/img/aromatizantes/foto 13.jpg"],
+    "categoria": "comestibles",
+    "precioUnitario": 4.50
+  },
+  {
+    "id": "c4",
+    "nombre": "Mix de Frutos Secos",
+    "descripcion": "Mezcla premium de almendras, nueces y pasas. Snack saludable y energético.",
+    "stock": 35,
+    "urlImagen": "/data/img/aromatizantes/foto 14.webp",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 14.webp", "/data/img/aromatizantes/foto 15.jpg"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 5.75
+  },
+  {
+    "id": "c5",
+    "nombre": "Té de Hierbas",
+    "descripcion": "Mezcla relajante de hierbas naturales. Ideal para momentos de tranquilidad.",
+    "stock": 28,
+    "urlImagen": "/data/img/aromatizantes/foto 16.webp",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 16.webp", "/data/img/aromatizantes/foto 18.webp"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 3.25
+  },
+  {
+    "id": "c6",
+    "nombre": "Café Premium",
+    "descripcion": "Café molido de alta calidad. Aroma intenso y sabor equilibrado.",
+    "stock": 25,
+    "urlImagen": "/data/img/aromatizantes/foto 19.jpeg",
+    "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 19.jpeg", "/data/img/aromatizantes/foto 20.webp"],
+    "categoria": "aromatizantes",
+    "precioUnitario": 6.99
   }
 ]

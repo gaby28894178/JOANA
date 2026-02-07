@@ -41,6 +41,9 @@
   .nav-links {
     display: none;
   }
+  .nav-search {
+    display: none;
+  }
   .hamburger {
     display: block;
   }
