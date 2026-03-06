@@ -114,12 +114,12 @@
 /* Hover colors by theme */
 .app.light .navbar .actions button:hover,
 .app.light .navbar .nav-links a:hover {
-  color: #7c3aed;
+  color: #f97316;
 }
 
 .app.light .navbar .nav-links a.active {
-  color: #7c3aed;
-  border-bottom: 2px solid #7c3aed;
+  color: #f97316;
+  border-bottom: 2px solid #f97316;
 }
 
 .app.dark .navbar .actions button:hover,
