@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import { NavLink, useNavigate, useSearchParams, useLocation } from "react-router-dom";
+import { NavLink, useNavigate, useSearchParams, useLocation, Link } from "react-router-dom";
 import { MenuContext } from "../context/menuCtx";
 import { CartContext } from "../context/cartCtx";
 import ThemeSwitch from "./ThemeSwitch";
@@ -24,11 +24,11 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo-container">
+      <Link to="/" className="logo-container" style={{ textDecoration: 'none' }}>
         <span className="logo-text , lobster-regular ">Joha </span>
         <img src={logo} alt="H" className="navbar-logo" />
         {/* <span className="logo-text"></span> */}
-      </div>
+      </Link>
 
         
 
