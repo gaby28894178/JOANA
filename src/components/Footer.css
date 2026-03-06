@@ -2,15 +2,15 @@
   background-color: white;
   color: #333;
   padding: 50px 20px 20px;
-  margin-top: auto;
+  margin-top: 2%;
   border-top: 3px solid transparent;
-  border-image: linear-gradient(to right, #4c1d95, #d8b4fe) 1;
+  border-image: linear-gradient(to right, #d8b4fe, #4c1d95, #d8b4fe) 1;
   box-shadow: 0 -4px 20px rgba(139, 92, 246, 0.25);
 }
 
 @media (max-width: 798px) {
   .footer {
-    margin-top: 3rem;
+    margin-top: 10%;
   }
 }
 
@@ -18,7 +18,7 @@
   background-color: #1a1a1a;
   color: #f0f0f0;
   border-top: 3px solid transparent;
-  border-image: linear-gradient(to right, #581c87, #e9d5ff) 1;
+  border-image: linear-gradient(to right, #e9d5ff, #581c87, #e9d5ff) 1;
   box-shadow: 0 -4px 20px rgba(168, 85, 247, 0.4);
 }
 
