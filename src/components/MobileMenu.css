@@ -17,7 +17,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  animation: slideIn 0.3s ease;
+  animation: slideIn 0.3s ease-out;
 }
 
 @media (max-width: 798px) {
