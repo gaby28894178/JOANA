@@ -5,7 +5,7 @@
   background: white;
   transition: all 0.2s ease;
   position: relative;
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4); /* Sombra lila visible */
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4); /* Sombra naranja visible */
 }
 
 .app.dark .product-card {
