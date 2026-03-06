@@ -5,13 +5,13 @@
   background: white;
   transition: all 0.2s ease;
   position: relative;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
 }
 
 .app.dark .product-card {
   background: #2a2a2a;
   border-color: #444;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
 }
 
 .product-image {

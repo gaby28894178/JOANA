@@ -4,8 +4,8 @@
   padding: 50px 20px 20px;
   margin-top: auto;
   border-top: 3px solid transparent;
-  border-image: linear-gradient(to right, #e9d5ff, #6b21a8) 1;
-  box-shadow: 0 -4px 15px rgba(107, 33, 168, 0.15);
+  border-image: linear-gradient(to right, #4c1d95, #d8b4fe) 1;
+  box-shadow: 0 -4px 20px rgba(139, 92, 246, 0.25);
 }
 
 @media (max-width: 798px) {
@@ -18,8 +18,8 @@
   background-color: #1a1a1a;
   color: #f0f0f0;
   border-top: 3px solid transparent;
-  border-image: linear-gradient(to right, #c084fc, #a855f7) 1;
-  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+  border-image: linear-gradient(to right, #581c87, #e9d5ff) 1;
+  box-shadow: 0 -4px 20px rgba(168, 85, 247, 0.4);
 }
 
 .footer-content {
@@ -46,7 +46,7 @@
 }
 
 .app.dark .footer-section h3 {
-  color: #25D366;
+  color: #c084fc;
 }
 
 .footer-section h3::after {
@@ -60,7 +60,7 @@
 }
 
 .app.dark .footer-section h3::after {
-  background-color: #25D366;
+  background-color: #c084fc;
 }
 
 .footer-section p {
@@ -87,7 +87,7 @@
 }
 
 .app.dark .contact-item .icon {
-  color: #25D366;
+  color: #c084fc;
 }
 
 .contact-item a {
@@ -105,7 +105,7 @@
 }
 
 .app.dark .contact-item a:hover {
-  color: #25D366;
+  color: #c084fc;
 }
 
 .footer-bottom {

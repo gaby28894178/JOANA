@@ -11,15 +11,15 @@
   z-index: 1000;
   background: white;
   border-bottom: 3px solid transparent;
-  border-image: linear-gradient(to right, #e9d5ff, #6b21a8) 1;
-  box-shadow: 0 4px 15px rgba(107, 33, 168, 0.15);
+  border-image: linear-gradient(to right, #4c1d95, #d8b4fe) 1;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.25);
 }
 
 .app.dark .navbar {
   background: #1a1a1a;
   border-bottom: 3px solid transparent;
-  border-image: linear-gradient(to right, #c084fc, #a855f7) 1;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-image: linear-gradient(to right, #581c87, #e9d5ff) 1;
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
 }  
 
 
@@ -81,7 +81,7 @@
 }
 
 .app.dark .logo-text {
-  color: #22c55e;
+  color: #c084fc;
 }
 
 .nav-links li { list-style: none; }
