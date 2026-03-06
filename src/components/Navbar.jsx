@@ -1,5 +1,5 @@
-import { useContext, useState } from "react";
-import { NavLink, useNavigate, useSearchParams } from "react-router-dom";
+import { useContext, useState, useEffect } from "react";
+import { NavLink, useNavigate, useSearchParams, useLocation } from "react-router-dom";
 import { MenuContext } from "../context/menuCtx";
 import { CartContext } from "../context/cartCtx";
 import ThemeSwitch from "./ThemeSwitch";
@@ -8,14 +8,24 @@ import "./Navbar.css";
 import logo from '../assets/logo.png'
 export default function Navbar() {
   const { toggleMenu } = useContext(MenuContext);
-  const { openCart } = useContext(CartContext);
+  const { openCart, items } = useContext(CartContext);
   const navigate = useNavigate();
-  const [q, setQ] = useState("");
+  const location = useLocation();
+  const [searchParams] = useSearchParams();
+  const [q, setQ] = useState(searchParams.get("q") || "");
+
+  useEffect(() => {
+    if (location.pathname === '/shop' || location.pathname === '/') {
+      setQ(searchParams.get("q") || "");
+    } else {
+      setQ("");
+    }
+  }, [location.search, location.pathname, searchParams]);
 
   return (
     <nav className="navbar">
       <div className="logo-container">
-        <span className="logo-text">Joha </span>
+        <span className="logo-text , lobster-regular ">Joha </span>
         <img src={logo} alt="H" className="navbar-logo" />
         {/* <span className="logo-text"></span> */}
       </div>
@@ -39,7 +49,11 @@ export default function Navbar() {
           <input
             type="text"
             value={q}
-            onChange={(e) => setQ(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              setQ(value);
+              navigate(`/shop?q=${encodeURIComponent(value)}`, { replace: true });
+            }}
             placeholder="Buscar"
           />
           <button aria-label="buscar" onClick={() => navigate(`/shop?q=${encodeURIComponent(q)}`)}>
@@ -47,8 +61,23 @@ export default function Navbar() {
           </button>
         </div>
         <ThemeSwitch />
-        <button onClick={openCart}>
+        <button onClick={openCart} style={{ position: 'relative' }}>
           <FaShoppingCart size={32} />
+          {items.length > 0 && (
+            <span style={{
+              position: 'absolute',
+              top: -5,
+              right: -5,
+              backgroundColor: 'red',
+              color: 'white',
+              borderRadius: '50%',
+              padding: '2px 6px',
+              fontSize: '12px',
+              fontWeight: 'bold'
+            }}>
+              {items.length}
+            </span>
+          )}
         </button>
         <button className="hamburger" onClick={toggleMenu}>
           <FaBars size={22} />

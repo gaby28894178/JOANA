@@ -23,9 +23,9 @@ export default function Shop() {
   const filtered = q ? items.filter(p => (p.nombre || '').toLowerCase().includes(q)) : items
 
   return (
-    <section>
+    <section style={{ paddingBottom: 0 }}>
       <h1>Shop</h1>
-      <div style={{ display: 'grid', gap: 16, gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))' }}>
+      <div style={{ display: 'grid', gap: 16, gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', marginBottom: 0 }}>
         {filtered.map((p) => (
           <ProductCard key={p.id} product={p} />
         ))}

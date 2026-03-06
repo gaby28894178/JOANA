@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
 
   const handleAdd = () => {
     if (addItem) addItem({ id: product.id, name: product.nombre, price: product.precioUnitario })
-    openCart()
+    // openCart() // Removed to prevent opening cart automatically
   }
 
   const openModal = () => setShowModal(true)
@@ -47,16 +47,16 @@ export default function ProductCard({ product }) {
           <div style={{
             backgroundColor: 'white',
             padding: 20,
-            borderRadius: 8,
-            maxWidth: 400,
-            width: '90%'
+            width: '100%',
+            height: '100%',
+            overflowY: 'auto'
           }} onClick={e => e.stopPropagation()}>
             <h3>{product.nombre}</h3>
-            <img src={product.urlImagen} alt={product.nombre} style={{ width: '100%', height: 200, objectFit: 'contain', margin: '10px 0' }} />
+            <img src={product.urlImagen} alt={product.nombre} style={{ width: '100%', height: '60%', objectFit: 'contain', margin: '10px 0' }} />
             <p>{product.descripcion}</p>
             <div style={{ marginTop: 10, fontWeight: 'bold' }}>Precio: ${product.precioUnitario.toFixed(2)}</div>
             <div>Stock: {product.stock} unidades</div>
-            <button onClick={closeModal} style={{ marginTop: 15 }}>Cerrar</button>
+            <button onClick={closeModal} style={{ marginTop: 15, backgroundColor: 'red', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer' }}>Cerrar</button>
           </div>
         </div>
       )}
