@@ -26,6 +26,11 @@
   }
 }
 
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
 .app.dark .mobile-menu-content {
   background: #1a1a1a;
   color: white;
