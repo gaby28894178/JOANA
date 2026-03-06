@@ -8,6 +8,12 @@
   box-shadow: 0 -4px 15px rgba(107, 33, 168, 0.15);
 }
 
+@media (max-width: 798px) {
+  .footer {
+    margin-top: 3rem;
+  }
+}
+
 .app.dark .footer {
   background-color: #1a1a1a;
   color: #f0f0f0;
