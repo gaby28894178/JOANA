@@ -6,8 +6,7 @@
     "stock": 25,
     "urlImagen": "/data/img/aromatizantes/foto 1.jpg",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 1.jpg", "/data/img/aromatizantes/foto 2.jpg"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 5.99
+    "categoria": "aromatizantes"
   },
   {
     "id": "a2",
@@ -16,8 +15,7 @@
     "stock": 18,
     "urlImagen": "/data/img/aromatizantes/foto 3.webp",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 3.webp", "/data/img/aromatizantes/foto 4.jpg"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 6.49
+    "categoria": "aromatizantes"
   },
   {
     "id": "a3",
@@ -26,8 +24,7 @@
     "stock": 22,
     "urlImagen": "/data/img/aromatizantes/foto 5.png",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 5.png", "/data/img/aromatizantes/foto 6.jpg"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 5.79
+    "categoria": "aromatizantes"
   },
   {
     "id": "a4",
@@ -36,8 +33,7 @@
     "stock": 15,
     "urlImagen": "/data/img/aromatizantes/foto 7.webp",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 7.webp", "/data/img/aromatizantes/foto 8.webp"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 7.25
+    "categoria": "aromatizantes"
   },
   {
     "id": "a5",
@@ -46,8 +42,7 @@
     "stock": 20,
     "urlImagen": "/data/img/aromatizantes/foto 9.jpg",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 9.jpg", "/data/img/aromatizantes/foto 10.webp"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 6.99
+    "categoria": "aromatizantes"
   },
   {
     "id": "a6",
@@ -56,8 +51,7 @@
     "stock": 17,
     "urlImagen": "/data/img/aromatizantes/foto 11.webp",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 11.webp", "/data/img/aromatizantes/foto 12.jpeg"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 6.75
+    "categoria": "aromatizantes"
   },
   {
     "id": "c1",
@@ -66,8 +60,7 @@
     "stock": 40,
     "urlImagen": "/data/img/comestibles/foto 17.webp",
     "urlImagenesCarrusel": ["/data/img/comestibles/foto 17.webp", "/data/img/comestibles/foto 22.png"],
-    "categoria": "comestibles",
-    "precioUnitario": 2.99
+    "categoria": "comestibles"
   },
   {
     "id": "c2",
@@ -76,8 +69,7 @@
     "stock": 30,
     "urlImagen": "/data/img/comestibles/foto 23.jpg",
     "urlImagenesCarrusel": ["/data/img/comestibles/foto 23.jpg", "/data/img/comestibles/foto 24.jpg"],
-    "categoria": "comestibles",
-    "precioUnitario": 3.99
+    "categoria": "comestibles"
   },
   {
     "id": "c3",
@@ -86,8 +78,7 @@
     "stock": 20,
     "urlImagen": "/data/img/comestibles/foto 29.jpg",
     "urlImagenesCarrusel": ["/data/img/comestibles/foto 29.jpg", "/data/img/aromatizantes/foto 13.jpg"],
-    "categoria": "comestibles",
-    "precioUnitario": 4.50
+    "categoria": "comestibles"
   },
   {
     "id": "c4",
@@ -96,8 +87,7 @@
     "stock": 35,
     "urlImagen": "/data/img/aromatizantes/foto 14.webp",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 14.webp", "/data/img/aromatizantes/foto 15.jpg"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 5.75
+    "categoria": "aromatizantes"
   },
   {
     "id": "c5",
@@ -106,8 +96,7 @@
     "stock": 28,
     "urlImagen": "/data/img/aromatizantes/foto 16.webp",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 16.webp", "/data/img/aromatizantes/foto 18.webp"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 3.25
+    "categoria": "aromatizantes"
   },
   {
     "id": "c6",
@@ -116,7 +105,6 @@
     "stock": 25,
     "urlImagen": "/data/img/aromatizantes/foto 19.jpeg",
     "urlImagenesCarrusel": ["/data/img/aromatizantes/foto 19.jpeg", "/data/img/aromatizantes/foto 20.webp"],
-    "categoria": "aromatizantes",
-    "precioUnitario": 6.99
+    "categoria": "aromatizantes"
   }
 ]

@@ -24,7 +24,6 @@ export default function ProductDetail() {
       <img src={item.urlImagen} alt={item.nombre} style={{ height: 200, objectFit: 'contain' }} />
       <p>{item.descripcion}</p>
       <div>Stock: {item.stock}</div>
-      <div>Precio: ${item.precioUnitario.toFixed(2)}</div>
     </section>
   )
 }

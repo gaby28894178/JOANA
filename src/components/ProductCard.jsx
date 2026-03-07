@@ -8,7 +8,7 @@ export default function ProductCard({ product }) {
   const [showModal, setShowModal] = useState(false)
 
   const handleAdd = () => {
-    if (addItem) addItem({ id: product.id, name: product.nombre, price: product.precioUnitario })
+    if (addItem) addItem({ id: product.id, name: product.nombre, price: 0 })
     // openCart() // Removed to prevent opening cart automatically
   }
 
@@ -20,7 +20,6 @@ export default function ProductCard({ product }) {
       <article className="product-card">
         <img src={product.urlImagen} alt={product.nombre} className="product-image" />
         <div className="product-name">{product.nombre}</div>
-        <div className="product-price">${product.precioUnitario.toFixed(2)}</div>
         <div className="product-actions">
           <button className="add-to-cart-btn" onClick={handleAdd}>
             <FaShoppingCart /> Agregar
@@ -54,7 +53,6 @@ export default function ProductCard({ product }) {
             <h3>{product.nombre}</h3>
             <img src={product.urlImagen} alt={product.nombre} style={{ width: '100%', height: '60%', objectFit: 'contain', margin: '10px 0' }} />
             <p>{product.descripcion}</p>
-            <div style={{ marginTop: 10, fontWeight: 'bold' }}>Precio: ${product.precioUnitario.toFixed(2)}</div>
             <div>Stock: {product.stock} unidades</div>
             <button onClick={closeModal} style={{ marginTop: 15, backgroundColor: 'red', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer' }}>Cerrar</button>
           </div>

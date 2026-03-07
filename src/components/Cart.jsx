@@ -11,8 +11,6 @@ export default function Cart() {
 
   if (!open) return null;
 
-  const total = items.reduce((acc, i) => acc + (Number(i.price) * Number(i.quantity)), 0);
-
   const handleSendOrder = () => {
     if (!clientPhone.trim()) {
       setPhoneError("Por favor ingresa tu número de teléfono");
@@ -23,8 +21,8 @@ export default function Cart() {
     const rawPhoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "";
     const phoneNumber = rawPhoneNumber.replace(/\D/g, "");
     
-    const itemsList = items.map(i => `- ${i.name} (x${i.quantity}): $${(Number(i.price) * Number(i.quantity)).toFixed(2)}`).join('\n');
-    const message = `Hola, quiero realizar el siguiente pedido:\n\n${itemsList}\n\nTotal: $${total.toFixed(2)}\n\nMi número de contacto es: ${clientPhone}`;
+    const itemsList = items.map(i => `- ${i.name} (x${i.quantity})`).join('\n');
+    const message = `Hola, quiero realizar el siguiente pedido:\n\n${itemsList}\n\nMi número de contacto es: ${clientPhone}`;
     
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -64,8 +62,6 @@ export default function Cart() {
                   <div key={item.id} className="cart-item" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 15, paddingBottom: 10, borderBottom: '1px solid #f0f0f0' }}>
                     <div style={{ flex: 1 }}>
                       <div style={{ fontWeight: 'bold' }}>{item.name}</div>
-                      <div style={{ fontSize: '0.9em', color: '#666' }}>${Number(item.price).toFixed(2)} x {item.quantity}</div>
-                      <div style={{ fontWeight: 'bold' }}>${(Number(item.price) * Number(item.quantity)).toFixed(2)}</div>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
                       <button onClick={() => updateQuantity(item.id, -1)} style={{ width: 25, height: 25, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid #ddd', background: 'white', borderRadius: 4 }}><FaMinus size={10} /></button>
@@ -79,10 +75,6 @@ export default function Cart() {
             </div>
 
             <div className="cart-footer">
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '1.2em', fontWeight: 'bold' }}>
-                <span>Total:</span>
-                <span>${total.toFixed(2)}</span>
-              </div>
               
               <div style={{ marginTop: 15, marginBottom: 10 }}>
                 <label style={{ display: 'block', marginBottom: 5, fontWeight: 'bold' }}>Tu Teléfono de Contacto:</label>
